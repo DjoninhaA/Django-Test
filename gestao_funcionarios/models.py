@@ -9,6 +9,7 @@ class Departamento(models.Model):
 
 
 class Funcionario(models.Model):
+    id = models.IntegerField(primary_key=True, editable=False)
     nome = models.CharField(max_length=50)
     email = models.EmailField(unique=True)
     departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
