@@ -1,8 +1,9 @@
 from django.urls import path, include
 
-from gestao_funcionarios.views import funcionario_list, funcionario_detail
+from . import views
 
 urlpatterns = [
-    path('funcionarios/', funcionario_list, name='funcionario_list'),
-    path('funcionarios/<str:nome>/', funcionario_detail, name='funcionario_detail'),
+    path('funcionarios/', views.funcionario_list, name='funcionario_list'),
+    path('funcionario/update/<int:funcionario_id>', views.funcionario_detail, name='funcionario_detail'),
+    path('funcionario/delete/<int:funcionario_id>', views.funcionario_delete, name='funcionario_delete'),
 ]
