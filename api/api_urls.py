@@ -6,8 +6,8 @@ from gestao_funcionarios import views as funcionario_views
 
 
 router = routers.DefaultRouter()
-router.register(r'departamento', departamento_views.DepartamentoViewSet)
-router.register(r'funcionario', funcionario_views.FuncionarioViewSet)
+router.register(r'departamento', departamento_views.DepartamentoViewSet,basename='departamento')
+router.register(r'funcionario', funcionario_views.FuncionarioViewSet, basename='funcionario')
 
 urlpatterns =  [
     path('', include(router.urls))

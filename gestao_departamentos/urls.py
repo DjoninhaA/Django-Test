@@ -4,5 +4,5 @@ from .views import DepartamentoCreate, DepartamentoList, DepartamentoUpdate, Dep
 
 
 urlpatterns = [
-    path('create/', DepartamentoCreate.as_view(), name='departamento-list-create'),
+
 ]
