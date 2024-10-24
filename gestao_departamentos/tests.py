@@ -1,3 +1,7 @@
 from django.test import TestCase
 
-# Create your tests here.
+from .models import Departamento
+
+class DepartamentoTestCase(TestCase):
+    def setUp(self):
+        Departamento.objects.create(name="RH")

@@ -3,8 +3,7 @@ from .models import Funcionario
 
 
 class FuncionarioSerializer(serializers.ModelSerializer):
+    
     class Meta:
         model = Funcionario
         fields = ['id', 'nome', 'email', 'departamento']
-
-        
