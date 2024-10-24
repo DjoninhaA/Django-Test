@@ -1,12 +1,5 @@
 from django.db import models
-
-class Departamento(models.Model):
-    nome = models.CharField(max_length=50)
-
-    def __str__(self):
-        return f'Departamento: {self.nome}'
-
-
+from gestao_departamentos.models import Departamento
 
 class Funcionario(models.Model):
     id = models.IntegerField(primary_key=True, editable=False)
