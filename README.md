@@ -16,7 +16,7 @@ Este projeto é uma API desenvolvida em Django para gerenciar funcionários. A A
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   cd Django-Test
    ```
 
 2. Crie e ative o ambiente virtual:
